@@ -1,3 +1,6 @@
+Certainly! Here's the combined HTML code with the enhancements and animations added:
+
+```html
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,6 +14,7 @@
             background-color: #f5f5f5;
             margin: 0;
             padding: 0;
+            animation: fadeIn ease 2s;
         }
 
         header {
@@ -18,6 +22,7 @@
             color: #fff;
             text-align: center;
             padding: 20px;
+            animation: slideInDown ease 1s;
         }
 
         h1 {
@@ -45,6 +50,40 @@
             text-decoration: none;
             color: #007BFF;
         }
+
+        img {
+            width: 150px;
+            margin: 20px auto;
+            display: block;
+            animation: rotate 5s infinite linear;
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideInDown {
+            0% {
+                transform: translateY(-100%);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes rotate {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
     </style>
 </head>
 
@@ -54,7 +93,7 @@
     </header>
 
     <div style="text-align: center; margin: 20px;">
-        <img src="https://media.licdn.com/dms/image/D4D03AQHZ5oNFqtcPeg/profile-displayphoto-shrink_800_800/0/1671345298832?e=2147483647&v=beta&t=vV8PueSZ6gKcoo6ufJZincaGICoPafOqBK3fQSn-hnQ" alt="Yuvraj Singh" width="150">
+        <img src="https://media.licdn.com/dms/image/D4D03AQHZ5oNFqtcPeg/profile-displayphoto-shrink_800_800/0/1671345298832?e=2147483647&v=beta&t=vV8PueSZ6gKcoo6ufJZincaGICoPafOqBK3fQSn-hnQ" alt="Yuvraj Singh">
     </div>
 
     <div style="text-align: center;">
@@ -89,3 +128,6 @@
 </body>
 
 </html>
+```
+
+This code combines your original HTML with the added animations and styling. Adjustments can be made based on your preferences.
