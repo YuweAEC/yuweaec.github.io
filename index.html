@@ -1,4 +1,4 @@
-Certainly! Here's the combined HTML code with the enhancements and animations added:
+Certainly! Below is an enhanced version of the HTML code with different animations, colors, and transitions for a more appealing and modern look:
 
 ```html
 <!DOCTYPE html>
@@ -10,19 +10,18 @@ Certainly! Here's the combined HTML code with the enhancements and animations ad
     <title>Yuvraj Singh - Frontend Developer</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f5f5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #1a1a1a;
             margin: 0;
             padding: 0;
-            animation: fadeIn ease 2s;
+            color: #fff;
         }
 
         header {
             background-color: #007BFF;
-            color: #fff;
             text-align: center;
             padding: 20px;
-            animation: slideInDown ease 1s;
+            animation: fadeInUp 1s ease;
         }
 
         h1 {
@@ -33,6 +32,8 @@ Certainly! Here's the combined HTML code with the enhancements and animations ad
             font-size: 24px;
             margin-top: 20px;
             color: #007BFF;
+            border-bottom: 2px solid #007BFF;
+            padding-bottom: 5px;
         }
 
         p {
@@ -49,29 +50,33 @@ Certainly! Here's the combined HTML code with the enhancements and animations ad
         a {
             text-decoration: none;
             color: #007BFF;
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #004080;
         }
 
         img {
             width: 150px;
             margin: 20px auto;
             display: block;
+            border-radius: 50%;
             animation: rotate 5s infinite linear;
+            transition: transform 0.5s ease;
         }
 
-        @keyframes fadeIn {
+        img:hover {
+            transform: scale(1.2);
+        }
+
+        @keyframes fadeInUp {
             0% {
                 opacity: 0;
+                transform: translateY(20px);
             }
             100% {
                 opacity: 1;
-            }
-        }
-
-        @keyframes slideInDown {
-            0% {
-                transform: translateY(-100%);
-            }
-            100% {
                 transform: translateY(0);
             }
         }
@@ -130,4 +135,4 @@ Certainly! Here's the combined HTML code with the enhancements and animations ad
 </html>
 ```
 
-This code combines your original HTML with the added animations and styling. Adjustments can be made based on your preferences.
+This code incorporates different animations, colors, and transitions for a more visually appealing web page. Feel free to adjust the styles according to your preferences.
